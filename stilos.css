@@ -1,0 +1,84 @@
+ /*Esto es para dar un valor generalizado a todos los elemenentos por defecto*/
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+/*Cabecera de la pagina*/
+#cabecera{
+     height: 100px;
+     width: auto;
+     border: solid #ede5e5;
+     background-color: rgb(166, 172, 172);
+     text-align: center;/*Se el texto se centra al medio de la pagina*/
+     line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
+}
+
+
+/*Menu de navegacion*/
+#menu{
+     height: 100px;
+     width: auto;
+     background-color:  rgb(166, 172, 172);
+     text-align: center;
+     border: solid #ede5e5;
+     line-height: 100px;
+}
+
+/*Enlaces del menu*/
+.enlacesMenu{
+     font-size: 1.3rem;
+     text-decoration: none;
+     color: black;
+     padding: 13px;
+}
+
+/*Efectos de los enlaces*/
+.enlacesMenu:hover{
+     color: rgb(254, 254, 254);
+}
+
+/*Contenido principal*/
+#ContePrincipal{
+     height: 500px;
+     width: auto;
+     background-color:  rgb(166, 172, 172);
+     text-align: center;/*Se el texto se centra al medio de la pagina*/
+     line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
+}
+
+/*Contenido de la pagina*/
+#contenido{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 1.5rem;
+     color: rgb(253, 253, 253);
+}
+
+/*El pie de pagina*/
+#piedDePagina{
+     background-color:  rgb(166, 172, 172);
+     text-align: center;/*Se el texto se centra al medio de la pagina*/
+     line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
+    }
+
+/*Formatos de titulos principales*/
+.titulos{
+     font-family: "Edu AU VIC WA NT Arrows", cursive;
+     font-optical-sizing: auto;
+     font-weight: 420;
+     font-style: normal;
+}
+
+/*Otros titulos descriptivos*/
+#otrosTitulos{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: black;
+     font-size: 1.6rem;
+}
+
+/*Formato para el contenido del footer*/
+#formatoF{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 1.2rem;  
+}
+
