@@ -4,6 +4,43 @@
        padding: 0px;
 }
 
+
+body{
+       background-color: white;
+       color: black;
+
+       transition: all 0.3s ease;
+}
+
+
+body.modo-oscuro{
+       background-color: #111010;
+       color: white;
+      
+}
+
+
+#modo-btn{
+       margin-top: 20px;
+       padding: 10px 20px;
+       border: none;
+       background-color: #222;
+       color: white;
+       cursor: pointer;
+       border-radius: 5px;
+
+}
+
+body.modo-oscuro #modo-btn{
+       background-color: #f1c40f;
+       color: black;
+}
+
+
+
+
+
+
 /*Cabecera de la pagina*/
 #cabecera{
        height: 100px;
@@ -98,7 +135,7 @@
        text-align: center;
        transition: transform 0.2s ease;    
    }
-   
+
  /*Este hover hace una gran variedad de cosas 
  -Tiene una transition
  -Hacemos que sean flexibles 
