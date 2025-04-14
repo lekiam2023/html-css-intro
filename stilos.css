@@ -1,119 +1,124 @@
  /*Esto es para dar un valor generalizado a todos los elemenentos por defecto*/
 *{
-      margin: 0px;
-      padding: 0px;
+       margin: 0px;
+       padding: 0px;
 }
 
 /*Cabecera de la pagina*/
 #cabecera{
-      height: 100px;
-      width: auto;
-      border: solid #ede5e5;
-      background-color: rgb(166, 172, 172);
-      text-align: center;/*Se el texto se centra al medio de la pagina*/
-      line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
+       height: 100px;
+       width: auto;
+       border: solid #ffffff;
+       background-color: rgb(85, 138, 138);
+       text-align: center;/*Se el texto se centra al medio de la pagina*/
+       line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
 }
 
 
 /*Menu de navegacion*/
 #menu{
-      height: 100px;
-      width: auto;
-      background-color:  rgb(166, 172, 172);
-      text-align: center;
-      border: solid #ede5e5;
-      line-height: 100px;
+       height: 100px;
+       width: auto;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;/*justificacion del eje central*/
+       background-color:  rgb(77, 140, 140);
+       text-align: center;
+       border: solid #ede5e5;
+       line-height: 100px;
 }
 
 /*Enlaces del menu*/
 .enlacesMenu{
-      font-size: 1.3rem;
-      text-decoration: none;
-      color: black;
-      padding: 13px;
+       font-size: 1.3rem;
+       text-decoration: none;
+       color: black;
+       padding: 13px;
 }
 
 /*Efectos de los enlaces*/
 .enlacesMenu:hover{
-      color: rgb(254, 254, 254);
+        color: rgb(254, 254, 254);
 }
 
 /*Contenido principal*/
 #ContePrincipal{
-      height: 500px;
-      width: auto;
-      background-color:  rgb(166, 172, 172);
-      text-align: center;/*Se el texto se centra al medio de la pagina*/
-      line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
+       height: 500px;
+       width: auto;
+       background-color:  rgb(94, 143, 143);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;  
 }
 
 /*Contenido de la pagina*/
 #contenido{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 1.5rem;
-      color: rgb(253, 253, 253);
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-size: 1.5rem;
+       color: rgb(253, 253, 253);
 }
 
 /*El pie de pagina*/
 #piedDePagina{
-      background-color:  rgb(166, 172, 172);
-      text-align: center;/*Se el texto se centra al medio de la pagina*/
-      line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
+       background-color:  rgb(92, 142, 142);
+       text-align: center;/*Se el texto se centra al medio de la pagina*/
+       line-height: 100px; /*Se centrara verticalmente segun el tamaño de la pagina*/
 }
 
 /*Formatos de titulos principales*/
 .titulos{
-      font-family: "Edu AU VIC WA NT Arrows", cursive;
-      font-optical-sizing: auto;
-      font-weight: 420;
-      font-style: normal;
+       font-family: "Edu AU VIC WA NT Arrows", cursive;
+       font-optical-sizing: auto;
+       font-weight: 420;
+       font-style: normal;
 }
 
 /*Otros titulos descriptivos*/
 #otrosTitulos{
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: black;
-      font-size: 1.6rem;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: black;
+       font-size: 1.6rem;
 }
 
 /*Formato para el contenido del footer*/
 #formatoF{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 1.2rem;  
-}
-
-/*Contenedor flexbox para el main*/
-main{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 1.2rem;  
 }
 
 
 /*Flexbox par el container de las tarjetas*/
-#card-container{
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 3px;
-      gap: 4px;
-}
-
-.card{     
-      background-color: #080808;
-      padding: 20px;
-      border: solid ;
-      font-size: 2rem;
-      border-radius: 10px ;
-      box-shadow: 0 3px 6px rgba(200, 21, 21, 0.1);
-      min-width: 100px;
-      text-align: center;
-      color: #ede5e5;
-      flex: 1 1 auto;
-}
+.card {
+       background-color: #fff;
+       padding: 20px;
+       border-radius: 12px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       min-width: 150px;
+       text-align: center;
+       transition: transform 0.2s ease;    
+   }
+   
+ /*Este hover hace una gran variedad de cosas 
+ -Tiene una transition
+ -Hacemos que sean flexibles 
+ -Justificamos el eje central y el horizontal al centro
+ -Definimos un ancho diferente para que se vea la transition
+ -Y por ultipo como es flexible, hacemos uso de algunas propiedades
+ flex para que los items crescan se decrescan y que cojan el espacio disponible  
+ */
+.card:hover {
+       transform: scale(1.05);
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       width: 700px;
+       justify-content: center;
+       background-color: #6fd8d1;
+       color: #ffffff;
+       font-size: 1.4rem;
+       flex: 1 1 auto; /*Hacemos que el item cresca*/
+   }
 
 /*Medidas para que se vean bien en movil*/
 @media (max-width: 600px){
@@ -134,46 +139,3 @@ main{
      align-items: center;
    }
 }
-
-/*Ejemplos
-
-
-
-
-
-
-#contenedor{
-     width: 500px;
-     height: 500px;
-     background-color: black;
-     display: flex;
-
-     
-   
-     
-}
-.Cont1{
-     background-color: gray;
-     width: 100px;
-     height: 100px;
-     border: solid rgb(255, 255, 255);
-    flex: 1;
-}
-
-.Cont2{
-     background-color: gray;
-     width: 100px;
-     height: 100px;
-     border: solid rgb(255, 255, 255);
-     flex: 1;
-}
-
-.Cont3{
-     background-color: gray;
-     width: 100px;
-     height: 100px;
-     border: solid rgb(255, 255, 255);
-     flex: 1;
-     
-}
-     */
